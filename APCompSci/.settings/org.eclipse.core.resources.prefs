@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
 encoding//src/CatLab.java=UTF-8
-encoding//src/rectComponent.java=UTF-8
-encoding//src/rectViewer.java=UTF-8
+encoding//src/Rect/rectComponent.java=UTF-8
+encoding//src/Rect/rectViewer.java=UTF-8

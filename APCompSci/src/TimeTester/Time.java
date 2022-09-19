@@ -1,9 +1,10 @@
+package TimeTester;
+
 /**
   @author humzahkha0143
-  An incomplete time checker and setter for: 
-  hours (getHours, setHours), 
-  minutes (getMinutes, setMinutes), 
-  and seconds (getSeconds, setSeconds.)
+  An incomplete way to define time through the 'hours', 'minutes', and 'seconds' variables. 
+  These can be changed using the setHours, setMinutes, and setSeconds methods. 
+  Likewise, the getHours, getMinutes, and getSeconds methods can retrieve the three variables.
  */
 
 public class Time{
@@ -90,6 +91,13 @@ public class Time{
 	 */
 	public void setSeconds(int nSeconds) {
 		seconds = nSeconds;
+	}
+	
+	/**
+	 * 
+	 */
+	public String toString() {
+		return(hours + ":" + minutes + ":" + seconds);
 	}
 	
 };
