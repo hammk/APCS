@@ -1,4 +1,4 @@
-package TimeTester;
+package timeTester;
 
 /**
   @author humzahkha0143

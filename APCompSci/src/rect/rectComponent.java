@@ -1,4 +1,4 @@
-package Rect;
+package rect;
 
 
 /**
