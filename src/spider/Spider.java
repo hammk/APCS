@@ -16,13 +16,6 @@ public class Spider{
 		return pos;
 	}
 	/**
-	 * SetPos is a Setter method for the spider's position, changing it to a given integer.
-	 * @param nPos
-	 */
-	public void setPos(int nPos) {
-		this.pos = nPos;
-	}
-	/**
 	 * Default constructor; sets position to 5.
 	 */
 	public void cst() {
