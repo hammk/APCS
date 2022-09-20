@@ -6,7 +6,22 @@ public class Spider{
 	 * It can be moved using method move(), or turned around using the turn() method.
 	 * By @author humzahkha0143
 	 */
-	private int pos;
+	private int pos, dir;
+	private 
+
+	/**
+	 * Default constructor, setting the position of the Spider to 2.
+	 */
+	public void cst() {
+		pos = 2;
+	}
+	/**
+	 * Constructor with arguments, setting the position of the Spider to the integer newPos.
+	 * @param newPos
+	 */
+	public void cst(int newPos) {
+		pos = newPos;
+	}
 	
 	/**
 	 * GetPos returns the spider's position as an integer.
@@ -22,28 +37,12 @@ public class Spider{
 	public void setPos(int nPos) {
 		this.pos = nPos;
 	}
-	/**
-	 * 
-	 */
-	public void cst() {
-		setPos(15);
-	}
-	public void cst(int newPos) {
-		setPos(newPos);
-	}
-	
-	
-
 	
 	public void turn() {
-		// TODO Use a boolean to set direction back and forth.
-		
+		dir = dir * -1;	
 	}
-	
-	public void move() {
-		
-		
-		
+	public void move(int p) {
+		pos = pos + p;
 	}
 	
 }
