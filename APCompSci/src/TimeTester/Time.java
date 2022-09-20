@@ -94,7 +94,7 @@ public class Time{
 	}
 	
 	/**
-	 * 
+	 * Takes the hours, minutes, and seconds variable, and returns them.
 	 */
 	public String toString() {
 		return(hours + ":" + minutes + ":" + seconds);
