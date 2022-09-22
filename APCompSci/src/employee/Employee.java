@@ -1,8 +1,12 @@
 package employee;
 
 /**
+ * Employee class. Defined by their first name, last name, and salary.
+ * The first and last names can be turned into a single string using the getName() method. They can also both be set using the setName() method.
+ * Their salaries can be returned using getSalary(), set using setSalary(), and raised using raiseSalary().
+ * This class WILL run, but will only show this message as this was coded on a Thursday (thus, Birsday.) It will not hinder it's ability to be run under an actual tester class.
  * 
- * by @author humzahkha0143
+ *  By @author humzahkha0143
  */
 
 public class Employee {
@@ -72,9 +76,17 @@ public class Employee {
 		this.lName = nL2;
 	}
 	
+	/**
+	 * Raises salary by a percent.
+	 * @param pRaise - Percent to raise the salary by.
+	 */
 	public void raiseSalary(int pRaise) {
 		double percent = (pRaise / salary) * 100 ;
-		salary = ((percent * salary) - 0.000000000001) + salary;
+		salary = (percent * salary) + salary;
+	}
+	
+	public static void main (String[] args) {
+		System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ⁀⁀\\ \n                |       \\ \n                \\∖_____∕/\n                  || ||\n                 <=/ <=/\n");
 	}
 	
 }
