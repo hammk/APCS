@@ -8,10 +8,12 @@ package employee;
 public class Employee {
 	
 	/**
-	 * Initialize instance variables.
+	 * Initialized String instance variables, corresponding to First and Last Name.
 	 */
-	private String fName;
-	private String lName;
+	private String fName, lName;
+	/**
+	 * Initialized double instance variable, corresponding to salary .
+	 */
 	private double salary;
 	
 	/**
@@ -35,23 +37,44 @@ public class Employee {
 		salary = nS;
 	}
 
+	/**
+	 * Getter for instance var 'salary'
+	 * @return salary
+	 */
 	public double getSalary() {
 		return salary;
 	}
 
+	/**
+	 * Setter for instance var 'salary'
+	 * @param nS2 - Replacement salary.
+	 */
 	public void setSalary(double nS2) {
 		this.salary = nS2;
 	}
 	
+	/**
+	 * Getter for a combined string containing instance vars 'fName' and 'lName'.
+	 * @return "fName lName"
+	 */
 	public String getName() {
-		return fName + " " + lName;
+		String fullName = fName + " " + lName;
+		return fullName;
 	}
 	
+	/**
+	 * Setter for instance vars 'fName' and 'lName'.
+	 * @param nF2 - Replacement First Name
+	 * @param nL2 - Replacement Last Name
+	 */
 	public void setName(String nF2, String nL2) {
 		this.fName = nF2;
 		this.lName = nL2;
 	}
 	
-	
+	public void raiseSalary(int pRaise) {
+		double percent = (pRaise / salary) * 100 ;
+		salary = ((percent * salary) - 0.000000000001) + salary;
+	}
 	
 }
