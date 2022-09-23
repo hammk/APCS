@@ -1,20 +1,37 @@
 package rationalNumber;
 
 /**
+ * A class to represent a type; RationalNumber has two instance variables, numer (for the numerator) and denom (for the denominator).
+ * They can both be redefined using setNumerator and setDenominator, or returned with getNumerator and getDenominator.
+ * They can also be multiplied using getProduct or divided using divideBy.
+ * These two methods can also be substituted to any given replacement numerator or denominator.
  * 
  * @author humzahkha0143
- *
  */
 
 public class RationalNumber {
 	
+	/**
+	 * Initialized instance variable to correspond with the Numerator.
+	 */
 	private int numer;
+	/**
+	 * Initialized instance variable to correspond with the Denominator.
+	 */
 	private int denom;
 	
+	/**
+	 * Default constructor without arguments.
+	 */
 	public RationalNumber() {
 		numer = 0;
 		denom = 0;
 	}
+	/**
+	 * Parameratized constructor with arguments.
+	 * @param nN - new Numerator
+	 * @param nD - new Denominator
+	 */
 	public RationalNumber(int nN, int nD) {
 		numer = nN;
 		denom = nD;
