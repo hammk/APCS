@@ -58,6 +58,16 @@ public class RationalNumber {
 		int prd = numer * denom;
 		return prd;
 	}
+	/**
+	 * This will multiply a given numerator and denominator and return it, as opposed to using the instance vars.
+	 * @param nN - Numerator
+	 * @param nD - Denominator
+	 * @return nN * nD
+	 */
+	public int getProduct(int nN, int nD) {
+		int prd = nN * nD;
+		return prd;
+	}
 	
 	/**
 	 * This will divide the numerator and denominator stored in the instance vars and return it;
@@ -66,6 +76,16 @@ public class RationalNumber {
 	public double divideBy() {
 		double nN = numer;
 		double nD = denom;
+		double prd = nN / nD;
+		return prd;
+	}
+	/**
+	 * This will divide a given numerator and denominator and return it, as opposed to using the instance vars.
+	 * @param nN
+	 * @param nD
+	 * @return
+	 */
+	public double divideBy(int nN, int nD) {
 		double prd = nN / nD;
 		return prd;
 	}
