@@ -11,8 +11,10 @@ public class PairsTester {
 		double n1 = in.nextDouble();
 		System.out.print("\nGive me another number: ");
 		double n2 = in.nextDouble();
+		// create Scanner object. Then, prompt that object to ask the user for numbers to use in casting Pairs.
 		
 		Pairs pr = new Pairs(n1, n2);
+		// create the illustrious Pairs object 
 		
 		System.out.println("\n" + pr.getProduct());
 		System.out.println(pr.getSum());
@@ -24,6 +26,7 @@ public class PairsTester {
 		System.out.println(pr.getMinimum());
 		System.out.println(pr.getRadians());
 		System.out.println(pr.getSecant());
+		// test the Pairs object.
 		
 		in.close();
 	}
