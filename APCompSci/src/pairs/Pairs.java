@@ -91,9 +91,7 @@ public class Pairs
    */
    public double getRadians()
    {
-      int deg1 = (int) Math.round(num1);
-      int deg2 = (int) Math.round(num2);
-	  return (float) Math.toRadians(deg1);
+	   return (float) Math.toRadians(num1);
    }
 
    /**
