@@ -34,7 +34,7 @@ public class IceCreamCone {
 	// cnArea = pi * r(r + sqrt(h^2 + r^2) )
 	public double getSurfaceArea() {
 		
-		double cn = (Math.PI*rad(rad+Math.sqrt(math.pow(h,2) + r2))) - (Math.PI * r2);
+		double cn = (Math.PI * rad * (rad+Math.sqrt(Math.pow(high,2) + r2))) - (Math.PI * r2);
 		double ic = 4 * Math.PI * r2;
 		double sa = (ic / 2) + cn;
 		return sa;
