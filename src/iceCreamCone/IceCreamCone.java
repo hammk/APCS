@@ -12,7 +12,6 @@ public class IceCreamCone {
 	/** Define Instance Variables. */
 	private double high;
 	private double rad;
-	private double r2;
 	
 	/**
 	 * Default constructor, two params.
@@ -23,7 +22,6 @@ public class IceCreamCone {
 		
 		high = h;
 		rad = r;
-		r2 = Math.pow(rad, 2);
 		
 	}
 	
@@ -34,10 +32,9 @@ public class IceCreamCone {
 	// cnArea = pi * r(r + sqrt(h^2 + r^2) )
 	public double getSurfaceArea() {
 		
-		double cn = (Math.PI * rad * (rad+Math.sqrt(Math.pow(high,2) + r2))) - (Math.PI * r2);
-		double ic = 4 * Math.PI * r2;
-		double sa = (ic / 2) + cn;
-		return sa;
+		double lth = Math.sqrt(Math.pow(rad, 2) + Math.pow(high, 2));
+		double con = Math.PI * rad * lth;
+		return con;
 		
 	}
 	
@@ -49,9 +46,8 @@ public class IceCreamCone {
 	// spVol = (4/3) * pi * r3
 	public double getVolume() {
 		
-		double con = (1.0/3) * Math.PI * r2 * high;
-		double sph = (4/3) * Math.PI * Math.pow(rad, 3);
-		return ((sph / 2) + con);
+		double con = (1.0/3) * Math.PI * rad * rad * high;
+		return con;
 		
 	}
 	
