@@ -10,26 +10,22 @@ public class Balloon {
 	
 	public void addAir(int add) {
 		vol += add;
-		
-		
-	}
-	
-	public double getSurfaceArea() {
-		
-		
-		return 5;
 	}
 	
 	public double getVolume() {
-		
-		
-		return 5;
+		return vol;
+	}
+	
+	public double getSurfaceArea() {
+		// 4 * Math.PI * rad^2
+		double rad = Math.cbrt(vol / ( (4/3) / Math.PI) );
+		return (Math.pow(rad, 2) * Math.PI * 4);
 	}
 	
 	public double getRadius() {
-		
-		
-		return 5;
+		// volume = (4/3) * Math.PI * r3
+		double r3 = vol / ((4/3)/Math.PI);
+		return Math.cbrt(r3);
 	}
 	
 }
