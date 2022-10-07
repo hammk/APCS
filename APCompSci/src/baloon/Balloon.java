@@ -26,7 +26,7 @@ public class Balloon {
 	
 	/**
 	 * Returns the instance var representing volume.
-	 * @return vol
+	 * @return vol - Instance variable 'vol'4
 	 */
 	public double getVolume() {
 		return vol;
@@ -54,7 +54,7 @@ public class Balloon {
 	 * It works by going through 
 	 * @return rad^2 * Pi * 4
 	 */
-	public double getSurfaceArea(vol) {
+	public double getSurfaceArea() {
 		double rad = Math.cbrt( (vol * 3) / (4 * Math.PI) );
 		return (Math.pow(rad, 2) * Math.PI * 4);
 	}
