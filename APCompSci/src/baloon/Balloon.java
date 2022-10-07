@@ -5,7 +5,7 @@ public class Balloon {
 	private int vol;
 	
 	public Balloon() {
-		vol = 1;
+		vol = 0;
 	}
 	
 	public void addAir(int add) {
