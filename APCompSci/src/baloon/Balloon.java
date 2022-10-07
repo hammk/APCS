@@ -24,7 +24,7 @@ public class Balloon {
 	
 	public double getRadius() {
 		// volume = (4/3) * Math.PI * r3
-		double r3 = vol / ((4/3)/Math.PI);
+		double r3 = vol / (4/3) / Math.PI;
 		return Math.cbrt(r3);
 	}
 	
