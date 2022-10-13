@@ -7,19 +7,18 @@ public class Spider{
 	 * By @author humzahkha0143
 	 */
 	private int pos, dir;
-	private 
 
 	/**
 	 * Default constructor, setting the position of the Spider to 2.
 	 */
-	public void cst() {
+	public Spider() {
 		pos = 2;
 	}
 	/**
 	 * Constructor with arguments, setting the position of the Spider to the integer newPos.
 	 * @param newPos
 	 */
-	public void cst(int newPos) {
+	public Spider(int newPos) {
 		pos = newPos;
 	}
 	

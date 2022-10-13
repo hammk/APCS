@@ -26,28 +26,37 @@ public class Balloon {
 	
 	/**
 	 * Returns the instance var representing volume.
-	 * @return vol
+	 * @return vol - Instance variable 'vol'4
 	 */
 	public double getVolume() {
 		return vol;
 	}
 	
 	/**
-	 * 
-	 * @return 
-	 */
-	public double getSurfaceArea() {
-		double rad = Math.cbrt(vol / ( (4/3) / Math.PI) );
-		return (Math.pow(rad, 2) * Math.PI * 4);
-	}
-	
-	/**
-	 * 
+	 * Returns the radius of the balloon, using the instance variable Volume.
+	 * It works by multiplying the volume by 3, dividing it by (4 * Pi), then cube rooting the result. This is also used in solving the surface area.
 	 * @return
 	 */
 	public double getRadius() {
-		double r3 = vol / (4/3) / Math.PI;
-		return Math.cbrt(r3);
+		return ( Math.cbrt( (vol * 3) / (4 * Math.PI) ) );
+	}
+	/**
+	 * Returns the radius of the balloon, using a given number.
+	 * It works by multiplying a given number to substitute the volume by 3, dividing it by (4 * Pi), then cube rooting the result. This is also used in solving the surface area.
+	 * @return
+	 */
+	public double getRadius(int num) {
+		return ( Math.cbrt( (num * 3) / (4 * Math.PI) ) );
+	}
+
+	/**
+	 * Returns the surface area of the balloon. 
+	 * It works by going through 
+	 * @return rad^2 * Pi * 4
+	 */
+	public double getSurfaceArea() {
+		double rad = Math.cbrt( (vol * 3) / (4 * Math.PI) );
+		return (Math.pow(rad, 2) * Math.PI * 4);
 	}
 	
 }
