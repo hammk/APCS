@@ -1,7 +1,9 @@
 package birthDate;
 
 /**
- * A class to manipulate
+ * A class to manipulate one's full name (first name last name) and their birthdate as one long number.
+ * When casted, the user can get the birth month, day, and year stored in the object using methods getDay(), getMonth() , and getYear(), as well as the full name's initials using getInitials().
+ * There is an overwritten toString method to return the instance vars stored in the object, including the initials.
  * by @author humzahkha0143
  */
 public class BirthDate {
