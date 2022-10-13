@@ -47,11 +47,22 @@ public class BirthDate {
 	}
 	
 	/**
+	 * 
+	 */
+	public String getInitials() {
+		String fI = fullN.substring(0, 1);
+		int lIsep = fullN.indexOf(" ");
+		String lI = fullN.substring(lIsep + 1, lIsep + 2);
+		
+		return fI + lI;
+	}
+	
+	/**
 	 * Returns instance vars.
 	 * @return 'Name: Hamm Khan, Birthdate: 3/6/06'
 	 */
 	public String toString() {
-		return "Name: " + fullN + ", Birthdate: " + getMonth() + "/" + getDay() + "/" + getYear();
+		return "Name: " + fullN + ", " + getInitials() + ", Birthdate: " + getMonth() + "/" + getDay() + "/" + getYear();
 	}
 	
 }
