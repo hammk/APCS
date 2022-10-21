@@ -3,7 +3,10 @@ package stringComparison;
 public class StringSet {
 	
 	/**
-	 * Compares three strings to see which is first.
+	 * Compares three strings to see which is first. It compares s1 with s2, and
+	 * sets choice to be the s1 if it wins over s2 or sets choice to s2 if it wins
+	 * over s1. Then it compares choice to s3, if choice wins its set to s1 and
+	 * returned, else its set to s3 and returned.
 	 * @param s1 - First String to compare.
 	 * @param s2 - Second String to compare.
 	 * @param s3 - Third String to compare.
@@ -13,11 +16,10 @@ public class StringSet {
 		String choice = null;
 		if(!s1.equals(s2) || !s1.equals(s3)) {
 		
-			if(s1.compareTo(s2) > 0)      choice = s2;
-			 else if(s1.compareTo(s2) < 0)choice = s1;
-			if(s1.compareTo(s3) > 0)      choice = s3;
-			 else if(s1.compareTo(s3) < 0)choice = s1;
-			else                          choice = s1;
+			if(s1.compareTo(s2) > 0)       choice = s2;
+			 else if(s1.compareTo(s2) < 0) choice = s1;
+			if(choice.compareTo(s3) > 0)   choice = s3;
+			 else                          choice = s1;
 			
 		}
 		else choice = s1;
@@ -35,11 +37,10 @@ public class StringSet {
 		String choice = null;
 		if(!s1.equals(s2) || !s1.equals(s3)) {
 		
-			if(s1.compareTo(s2) < 0)      choice = s2;
-			 else if(s1.compareTo(s2) < 0)choice = s1;
-			if(s1.compareTo(s3) > 0)      choice = s3;
-			 else if(s1.compareTo(s3) < 0)choice = s1;
-			else                          choice = s1;
+			if(s1.compareTo(s2) < 0)       choice = s3;
+			 else if(s1.compareTo(s2) > 0) choice = s1;
+			if(choice.compareTo(s3) < 0)       choice = s2;
+			 else                          choice = s1;
 			
 		}
 		else choice = s1;
@@ -57,11 +58,10 @@ public class StringSet {
 		String choice = null;
 		if(!s1.equals(s2) || !s1.equals(s3)) {
 		
-			if(s1.compareTo(s2) < 0)      choice = s2;
-			 else if(s1.compareTo(s2) > 0)choice = s1;
-			if(s1.compareTo(s3) < 0)      choice = s3;
-			 else if(s1.compareTo(s3) > 0)choice = s1;
-			else                          choice = s1;
+			if(s1.compareTo(s3) < 0)       choice = s1;
+			 else if(s1.compareTo(s3) > 0) choice = s3;
+			if(choice.compareTo(s2) < 0)       choice = s2;
+			 else                          choice = s1;
 			
 		}
 		else choice = s1;
