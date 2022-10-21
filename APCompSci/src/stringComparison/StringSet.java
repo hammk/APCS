@@ -1,16 +1,21 @@
 package stringComparison;
 
+/**
+ * A type to compare three strings.
+ * It compares s1 with s2, and sets choice to be the
+ * s1 if it wins over s2 or sets choice to s2 if it wins
+ * over s1. Then it compares choice to s3, if choice wins
+ * its set to s1 and returned, else its set to s3 and returned.
+ * @author hamm-win10 / humzahkha0143
+ */
 public class StringSet {
 	
 	/**
-	 * Compares three strings to see which is first. It compares s1 with s2, and
-	 * sets choice to be the s1 if it wins over s2 or sets choice to s2 if it wins
-	 * over s1. Then it compares choice to s3, if choice wins its set to s1 and
-	 * returned, else its set to s3 and returned.
+	 * Compares three strings to see which is first.
 	 * @param s1 - First String to compare.
 	 * @param s2 - Second String to compare.
 	 * @param s3 - Third String to compare.
-	 * @return String that comes first lexicograpically.
+	 * @return String that comes first lexicographically.
 	 */
 	public static String getFirst(String s1, String s2, String s3) {
 		String choice = null;
@@ -30,7 +35,7 @@ public class StringSet {
 	 * @param s1 - First String to compare.
 	 * @param s2 - Second String to compare.
 	 * @param s3 - Third String to compare.
-	 * @return String that comes second lexicograpically.
+	 * @return String that comes second lexicographically.
 	 */
 	public static String getSecond(String s1, String s2, String s3) {
 		String choice = null;
@@ -50,7 +55,7 @@ public class StringSet {
 	 * @param s1 - First String to compare.
 	 * @param s2 - Second String to compare.
 	 * @param s3 - Third String to compare.
-	 * @return String that comes third lexicograpically.
+	 * @return String that comes third lexicographically.
 	 */
 	public static String getThird(String s1, String s2, String s3) {
 		String choice = null;
@@ -64,4 +69,5 @@ public class StringSet {
 		else choice = s1;
 		return choice;
 	}
+	
 }

@@ -1,7 +1,5 @@
 package timeTester;
 
-import javax.swing.JOptionPane;
-
 public class TTester {
 
 	public static void main(String[] args) {
