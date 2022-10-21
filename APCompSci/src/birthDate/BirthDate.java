@@ -67,4 +67,8 @@ public class BirthDate {
 		return "Name: " + fullN + ", " + getInitials() + ", Birthdate: " + getMonth() + "/" + getDay() + "/" + getYear();
 	}
 	
+	public static void main(String args[]) {
+		System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ⁀⁀\\ \n                |       \\ \n                \\∖_____∕/\n                  || ||\n                 <=/ <=/\n");
+	}
+	
 }
