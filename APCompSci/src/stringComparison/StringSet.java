@@ -19,7 +19,6 @@ public class StringSet {
 			if(s1.compareTo(s2) > 0)       choice = s2;
 			 else if(s1.compareTo(s2) < 0) choice = s1;
 			if(choice.compareTo(s3) > 0)   choice = s3;
-			 else                          choice = s1;
 			
 		}
 		else choice = s1;
@@ -40,7 +39,6 @@ public class StringSet {
 			if(s1.compareTo(s2) < 0)       choice = s3;
 			 else if(s1.compareTo(s2) > 0) choice = s1;
 			if(choice.compareTo(s3) < 0)   choice = s2;
-			 else                          choice = s1;
 			
 		}
 		else choice = s1;
@@ -60,8 +58,7 @@ public class StringSet {
 		
 			if(s1.compareTo(s3) < 0)       choice = s1;
 			 else if(s1.compareTo(s3) > 0) choice = s3;
-			if(choice.compareTo(s2) < 0)   choice = s2;
-			 else                          choice = s1;
+			if(choice.compareTo(s2) > 0)   choice = s2;
 			
 		}
 		else choice = s1;
