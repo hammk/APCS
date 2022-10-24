@@ -18,9 +18,8 @@ public class CircleComponent extends JComponent
    {
       circle = new Circle(200, 200, 100, Color.BLACK);
       final double SMALL_RADIUS = 3;
-      Color color;
-      if(. . .)
-         . . . 
+      Color color = null;
+      if(circle.isInside(point) == true) color = color.yellow;
       
       smallCircle = new Circle(point.getX(), point.getY(), SMALL_RADIUS, color);
    }

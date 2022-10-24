@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.Point2D;
 import java.awt.geom.Ellipse2D;
+import java.awt.geom.Point2D.Double;
 
 /**
    This class implements a circle and a boolean function to
@@ -46,7 +47,10 @@ public class Circle
    */
    public boolean isInside(Point2D.Double p)
    {
-      . . .
+      
+      if (p.distance(xCenter, yCenter) <= radius) return true;
+      else return false;
+      
    }
 
    private double xCenter;
