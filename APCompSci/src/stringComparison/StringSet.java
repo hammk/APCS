@@ -18,7 +18,7 @@ public class StringSet {
 	 * @return String that comes first lexicographically.
 	 */
 	public static String getFirst(String s1, String s2, String s3) {
-		String choice = null;
+		String choice = s1;
 		if(!s1.equals(s2) && !s1.equals(s3)) {
 		
 			if(s1.compareTo(s2) > 0)       choice = s2;
@@ -26,7 +26,6 @@ public class StringSet {
 			if(choice.compareTo(s3) > 0)   choice = s3;
 			
 		}
-		else choice = s1;
 		return choice;
 	}
 	
@@ -38,15 +37,14 @@ public class StringSet {
 	 * @return String that comes second lexicographically.
 	 */
 	public static String getSecond(String s1, String s2, String s3) {
-		String choice = null;
+		String choice = s1;
 		if(!s1.equals(s2) && !s1.equals(s3)) {
 		
-			if(s1.compareTo(s2) < 0)       choice = s3;
-			 else if(s1.compareTo(s2) > 0) choice = s1;
-			if(choice.compareTo(s3) < 0)   choice = s2;
+			if(s1.compareTo(s2) > 0)       choice = s1;
+			 else if(s1.compareTo(s2) < 0) choice = s3;
+			if(choice.compareTo(s3) > 0)   choice = s2;
 			
 		}
-		else choice = s1;
 		return choice;
 	}
 	
@@ -58,15 +56,14 @@ public class StringSet {
 	 * @return String that comes third lexicographically.
 	 */
 	public static String getThird(String s1, String s2, String s3) {
-		String choice = null;
+		String choice = s1;
 		if(!s1.equals(s2) && !s1.equals(s3)) {
 		
-			if(s1.compareTo(s3) < 0)       choice = s1;
-			 else if(s1.compareTo(s3) > 0) choice = s3;
-			if(choice.compareTo(s2) > 0)   choice = s2;
+			if(s1.compareTo(s2) < 0)       choice = s1;
+			 else if(s1.compareTo(s2) > 0) choice = s2;
+			if(choice.compareTo(s3) < 0)   choice = s3;
 			
 		}
-		else choice = s1;
 		return choice;
 	}
 	
