@@ -59,9 +59,9 @@ public class StringSet {
 		String choice = s1;
 		if(!s1.equals(s2) && !s1.equals(s3)) {
 		
-			if(s1.compareTo(s2) < 0)       choice = s1;
-			 else if(s1.compareTo(s2) > 0) choice = s2;
-			if(choice.compareTo(s3) < 0)   choice = s3;
+			if(s1.compareTo(s2) > 0)       choice = s1;
+			 else if(s1.compareTo(s2) < 0) choice = s2;
+			if(choice.compareTo(s3) > 0)   choice = s3;
 			
 		}
 		return choice;

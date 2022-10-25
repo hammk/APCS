@@ -5,8 +5,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Point2D;
-import java.awt.geom.Ellipse2D;
-import javax.swing.JOptionPane;
 
 /**
    Draws a circle and a point. The point is colored green if it falls
@@ -19,8 +17,8 @@ public class CircleComponent extends JComponent
       circle = new Circle(200, 200, 100, Color.BLACK);
       final double SMALL_RADIUS = 3;
       Color color = null;
-      if(circle.isInside(point) == true) color = color.yellow;
-      else color = color.blue;
+      if(circle.isInside(point) == true) color = Color.yellow;
+      else color = Color.blue;
       
       smallCircle = new Circle(point.getX(), point.getY(), SMALL_RADIUS, color);
    }
