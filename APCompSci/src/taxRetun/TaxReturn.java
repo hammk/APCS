@@ -8,7 +8,7 @@ package taxRetun;
 public class TaxReturn {
     
     /**
-     * Instance var; how much money 
+     * Instance var; how much money is being used.
      */
     private int dolar;
     
@@ -16,24 +16,27 @@ public class TaxReturn {
         dolar = moner;
     }
     
+    /**
+     * For each milestone reached, add 0.1 to the tax rate, then when it fails a milestone, compute the tax rate by dividing it by 10 and multiplying it by dolar.
+     * @return
+     */
     public int getTax() {
-        int tax = 1;
+        double tax = 0.1;
         if(dolar >= 50000) {
-            tax++;
+            tax+= 0.1;
             if(dolar >= 75000) {
-                tax++;
+                tax+= 0.1;
                 if(dolar >= 100000) {
-                    tax++;
+                    tax+= 0/1;
                     if(dolar >= 250000) {
-                        tax++;
+                        tax+= 0.1;
                         if(dolar >= 500000) {
-                            tax++;
+                            tax+= 0.1;
                         }
                     }
                 } 
             }
         } // 100 * part / whole
-        else return 5;
-        return (tax * 100) / dolar;
+        return (int) ((tax / 10) * dolar);
     }
 }
