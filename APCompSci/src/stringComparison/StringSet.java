@@ -2,10 +2,9 @@ package stringComparison;
 
 /**
  * A type to compare three strings.
- * It compares s1 with s2, and sets choice to be the
- * s1 if it wins over s2 or sets choice to s2 if it wins
- * over s1. Then it compares choice to s3, if choice wins
- * its set to s1 and returned, else its set to s3 and returned.
+ * It compares s1 with s2, and depending on the chosen
+ * method (getFirst, getSecond, getThird), it decides the
+ * victor and pits it against s3 to decide which is first/second/third.
  * @author hamm-win10 / humzahkha0143
  */
 public class StringSet {
