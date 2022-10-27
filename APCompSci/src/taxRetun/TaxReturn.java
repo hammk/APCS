@@ -17,7 +17,7 @@ public class TaxReturn {
     }
     
     /**
-     * For each milestone reached, add 0.1 to the tax rate, then when it fails a milestone, compute the tax rate by dividing it by 10 and multiplying it by dolar.
+     * For each milestone reached, add 0.1 to the tax rate, then when it fails a milestone, compute the final tax rate by dividing it by 10 and multiplying it by dolar.
      * @return
      */
     public int getTax() {
