@@ -12,27 +12,28 @@ public class RPS {
             case 1  : cN = "Rock";     break;
             case 2  : cN = "Paper";    break;
             case 3  : cN = "Scissors"; break;
-            default : return "Wrong choice!";
+            default : return "Oop, I screwed up.";
         }
         
         if(pN.equalsIgnoreCase(cN)) return "Tie!";  
         else if(pN.equalsIgnoreCase("Rock")) {
-            if(cN.equals("Paper")) return "I won! (chose Paper)";
-            if(cN.equals("Scissors")) return "I lost! (chose Scissors)";
+            if(cN.equals("Paper")) decision = "You won!";
+            if(cN.equals("Scissors")) decision = "I lost!";
         }
         else if(pN.equalsIgnoreCase("Paper")) {
-            if(cN.equals("Rock")) return "I lost! (chose Rock)";
-            if(cN.equals("Scissors")) return "I won! (chose Scissors)";
+            if(cN.equals("Rock")) decision = "You won!";
+            if(cN.equals("Scissors")) decision = "I won!";
         }
         else if(pN.equalsIgnoreCase("Scissors")) {
-            if(cN.equals("Paper")) return "I lost! (chose Paper)";
-            if(cN.equals("Rock")) return "I won! (chose Rock)";
+            if(cN.equals("Paper")) decision = "You won!";
+            if(cN.equals("Rock")) decision = "I won!";
         }
+        else return "Did you choose Rock, Paper or Scissors? Try again.";
         
-        return decision;
+        return "\nI chose " + cN + "!\n" + decision;
     }
     
     public static void main(String args[]) {
-        System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    â?€â?€\\ \n                |       \\ \n                \\âˆ–_____âˆ•/\n                  || ||\n                 <=/ <=/\n");
+        System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ï¿½?ï¿½ï¿½?ï¿½\\ \n                |       \\ \n                \\âˆ–_____âˆ•/\n                  || ||\n                 <=/ <=/\n");
     }
 }
