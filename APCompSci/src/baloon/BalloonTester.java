@@ -1,4 +1,4 @@
-package baloon;
+package balloon;
 
 public class BalloonTester {
 
