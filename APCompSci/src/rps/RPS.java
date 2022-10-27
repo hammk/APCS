@@ -18,7 +18,7 @@ public class RPS {
         if(pN.equalsIgnoreCase(cN)) return "Tie!";  
         else if(pN.equalsIgnoreCase("Rock")) {
             if(cN.equals("Paper")) return "I won! (chose Paper)";
-            if(cN.equals("Scissors")) return "I lost! (chose Scissors";
+            if(cN.equals("Scissors")) return "I lost! (chose Scissors)";
         }
         else if(pN.equalsIgnoreCase("Paper")) {
             if(cN.equals("Rock")) return "I lost! (chose Rock)";
@@ -33,6 +33,6 @@ public class RPS {
     }
     
     public static void main(String args[]) {
-        System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ‚ÅÄ‚ÅÄ\\ \n                |       \\ \n                \\‚àñ_____‚àï/\n                  || ||\n                 <=/ <=/\n");
+        System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ‚?Ä‚?Ä\\ \n                |       \\ \n                \\‚àñ_____‚àï/\n                  || ||\n                 <=/ <=/\n");
     }
 }
