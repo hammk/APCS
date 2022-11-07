@@ -19,13 +19,13 @@ public class RPS {
         
         String cN = null;
         String decision = null;
-        int cC = (int) (Math.random() * 3);
+        int cC = (int) (Math.random() * 2);
         if(cC == 0) cC++;
         
         switch (cC) {
-            case 1  : cN = "Rock";     break;
-            case 2  : cN = "Paper";    break;
-            case 3  : cN = "Scissors"; break;
+            case 0  : cN = "Rock";     break;
+            case 1  : cN = "Paper";    break;
+            case 2  : cN = "Scissors"; break;
             default : return "Oop, I screwed up.";
         }
         
