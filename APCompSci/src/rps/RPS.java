@@ -20,8 +20,7 @@ public class RPS {
         String cN = null;
         String decision = null;
         int cC = (int) (Math.random() * 2);
-        if(cC == 0) cC++;
-        
+       
         switch (cC) {
             case 0  : cN = "Rock";     break;
             case 1  : cN = "Paper";    break;
@@ -45,10 +44,10 @@ public class RPS {
         else return "You did not enter Rock, Paper, or Scissors!!!";
         
         return "\nComputer selects: " + cN + "!\n\n" + decision;
-        
+
     }
     
-    //public static void main(String args[]) {
-    //    System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ⁀⁀\\ \n                |       \\ \n                \\∖_____∕/\n                  || ||\n                 <=/ <=/\n");
-    //}
+    public static void main(String args[]) {
+        System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ⁀⁀\\ \n                |       \\ \n                \\∖_____∕/\n                  || ||\n                 <=/ <=/\n");
+    }
 }
