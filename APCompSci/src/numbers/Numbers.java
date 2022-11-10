@@ -1,5 +1,11 @@
 package numbers;
 
+/**
+ * Given a number to start with and a number to end at, this class will check each following
+ * number to see if it is an even (using findEvenNumbers) or odd (using findOddNumbers) number,
+ * returning all of either.
+ * by @author humzahkha0143
+ */
 public class Numbers {
     
     private int st;
