@@ -5,28 +5,51 @@ public class Numbers {
     private int st;
     private int en;
     
-    StringBuilder sb = new StringBuilder();
-    
+    /**
+     * Constructor for two instance vars.
+     * @param start - number to start comparison at
+     * @param end - number to end comparison at
+     */
     public Numbers (int start, int end) {
         st = start;
         en = end;
     }
     
+    /**
+     * In a loop that lasts from the start instance var (given number is set to it) to
+     * the end instance var, it checks if the given number % 2 is 1, if so then append 
+     * it to String val and increments the given number until it reaches the end instance var.
+     * @return 15, 17, 19...
+     */
     public String findOddNumbers() {
-        
-        for(int gn = st; st <= en; st++) {
-            if (gn % 2 == 0) sb.append(gn);
+        String val = "";
+        for(int gn = st; gn <= en; gn++) {
+            if(gn % 2 == 1)
+            {
+                val += gn + " ";
+                gn++;
+            }
         }
-        return sb.toString();
+        return val;
         
     }
     
+    /**
+     * In a loop that lasts from the start instance var (given number is set to it) to
+     * the end instance var, it checks if the given number % 2 is 0, if so then append 
+     * it to String val and increments the given number until it reaches the end instance var.
+     * @return 16, 18, 20...
+     */
     public String findEvenNumbers() {
-        
-        for(int gn = st; st <= en; st++) {
-            if (gn % 2 == 1) sb.append(gn);
+        String val = "";
+        for(int gn = st; gn <= en; gn++) {
+            if(gn % 2 == 0)
+            {
+                val += gn + " ";
+                gn++;
+            }
         }
-        return sb.toString();
+        return val;
         
     }
     
