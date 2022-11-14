@@ -1,4 +1,4 @@
-package balloon;
+package baloon;
 
 /**
  * Defines a balloon object. Its only instance variable, vol, starts off deflated but can be blown into using the addAir method.
