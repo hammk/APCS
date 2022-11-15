@@ -3,7 +3,8 @@ package chessBoard;
 import java.awt.Color;
 import java.awt.Graphics2D;
 /**
- * Class to be used by JComponents.
+ * Class to be used by JComponents. When called by a component, the draw method will draw a checkerboard.
+ * @author humzahkha0143
  */
 
 public class Chessboard {
@@ -31,13 +32,13 @@ public class Chessboard {
      */
     public void draw(Graphics2D g2) {
         
-        int x, y;
+        double x, y;
         boolean wr = true;
 
         
-        for(y = 0; y <= (sq * sz); y+=sz) {
+        for(y = 0; y <= (sq * sz); y += sz) {
             
-           for(x = 0; x <= (sq * sz); x+=sz) {
+           for(x = 0; x <= (sq * sz); x += sz) {
                
                if(wr == true) {
                    g2.setColor(Color.red);
@@ -47,13 +48,12 @@ public class Chessboard {
                    g2.setColor(Color.white);
                    wr = true;
                }
-               g2.fillRect(x, y, sz, sz); 
+               g2.fillRect((int) x, (int) y, sz, sz); 
                
            }
                    
         }
-        
-        
+
     }
     
     
