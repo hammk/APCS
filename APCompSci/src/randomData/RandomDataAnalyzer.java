@@ -30,7 +30,7 @@ public class RandomDataAnalyzer {
         
         for(int i = 1; i <= rd; i++) {
             given = (int) (Math.random() * 100);
-            sum += given;
+            if(50 > given || given < 59) sum += given;
             System.out.print(given + ", ");
         }
         
