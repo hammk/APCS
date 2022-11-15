@@ -19,8 +19,8 @@ public class Interest {
         return cash;
     }
 
-    public int calcInt(int time) {
-        return cash * (rate * time + 1);
+    public void calcInt(int time) {
+        cash = ((rate / 100) * time + 1);
     }
 
 }

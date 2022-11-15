@@ -1,3 +1,5 @@
+package chessBoard;
+
 /**
  * @(#)ChessboardViewer.java
  *

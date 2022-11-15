@@ -17,7 +17,7 @@ public class Chessboard {
         
         int count, y;
         boolean wr = true;
-        for(y = 0; y <= sz; y += sz) {
+        for(y = 0; y <= sq; y += sq) {
             
            for(count = 0; count <= sz; count += sz) {
                
