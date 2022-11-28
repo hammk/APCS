@@ -16,12 +16,12 @@ public class Countries {
     this.data = data;
   }
 
-  public String getNames(int i) {
-      return names[i];
+  public String[] getNames() {
+      return names;
   }
 
-  public double getData(int i) {
-    return data[i];
+  public double[] getData() {
+    return data;
   }
 
   public String printData(String message) {

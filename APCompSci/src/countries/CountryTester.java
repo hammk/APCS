@@ -10,12 +10,12 @@ public class CountryTester {
 
     Countries countriesData = new Countries(names, internetUsage);
 
-    for(int index = 0; index <= names.length - 1; index++) {
-        System.out.println("Countries: " + countriesData.getNames(index));
-        System.out.println("Percent Using the Internet: " + countriesData.getData(index) + "\n");
+    for(int index = 0; index < names.length; index++) {
+        System.out.println("Countries: " + countriesData.getNames()[index]);
+        System.out.println("Percent Using the Internet: " + countriesData.getData()[index] + "\n");
     }
 
-    System.out.println(countriesData.printData("% using the Internet"));
+    System.out.println(countriesData.printData("% using the Internet\n"));
     
   }
 }
