@@ -1,7 +1,8 @@
 package countries;
 
 /** 
- * Fix by 
+ * Only condition is no method signature changes. 
+ * Fixes by author
  * @author humzahkha0143
  */
 
@@ -15,22 +16,19 @@ public class Countries {
     this.data = data;
   }
 
-  public String[] getNames(int index) {
-    return names[index];
+  public String getNames(int i) {
+      return names[i];
   }
 
-  public double[] getData(int index) {
-    return data;
+  public double getData(int i) {
+    return data[i];
   }
 
   public String printData(String message) {
     String result = "";
-    int index = 0;
 
-    while (index <= names.length - 1) {
+    for (int index = 0; index <= names.length - 1; index++) {
       result += names[index] + ": " + data[index] + message + "\n";
-
-      index += 1;
     }
 
     return result;
