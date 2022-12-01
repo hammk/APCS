@@ -3,17 +3,17 @@ package arraySort;
 import java.util.ArrayList;
 
 /**
- * Two methods; one 
+ * Two static methods that check if
+ * an array (or arraylist) are sorted.
  * @author humzahkha0143
  */
 
 public class Sorted {
 
     /**
-     * checks if an Array is sorted properly using
- * a for loop to compare an index against (index + 1) to see if
- * (index + 1) is higher than index. The second is the same, but
- * for ArrayLists instead of Arrays.
+     * Checks if an Array is sorted properly using
+     * a for loop to compare an index against (index + 1) to see if
+     * (index + 1) is higher than index.
      * @param ar - Array of Integers
      * @return
      */
@@ -24,6 +24,11 @@ public class Sorted {
         return true;
     }
     
+    /**
+     * Same as isArraySorted, but for ArrayLists.
+     * @param ar - ArrayList of Integers
+     * @return
+     */
     public static boolean isArrayListSorted(ArrayList<Integer> ar) {
         for(int i = 1; i < ar.size(); i++) {
             if(ar.get(i) < ar.get(i - 1)) return false;
