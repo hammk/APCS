@@ -29,6 +29,9 @@ public class SortTest {
         System.out.println("\n" + Sorted.isArraySorted(ar));
         System.out.println(Sorted.isArrayListSorted(arList));
         
-    }
+        System.out.println("\n  ---------       /-- \n / \"HAPPY  \\     /-\\ \n/  BIRSDAY  \\   |. .|\n\\  AP COMP  / ~ | V |\n \\   SCI!\" /    |----\\ \n  ---------     |    ⁀⁀\\ \n                |       \\ \n                \\∖_____∕/\n                  || ||\n                 <=/ <=/\n");
 
+        
+    }
+    
 }
