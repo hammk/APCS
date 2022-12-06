@@ -85,7 +85,7 @@ public class TwoDArray {
                 num += ary[xIndex][yIndex];
                 
             }
-            numTbl[xIndex] = num / ary[yIndex].length;
+            numTbl[xIndex] = num / ary[xIndex].length;
             
         }
         return numTbl;

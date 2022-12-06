@@ -10,13 +10,14 @@ public class TDTest {
         System.out.println(TwoDArray.getLargestValue(sizeGvn));
         
         for (int row = 0; row < avgGvn.length; row++) {
-            for (int col = 0; col < avgGvn[row].length; col++) {
-                System.out.println(TwoDArray.getRowAvg(avgGvn)[row] + "\n");
-                System.out.println(TwoDArray.getColAvg(avgGvn)[col]);
-            }
+            System.out.println(TwoDArray.getRowAvg(avgGvn)[row]);
         }
         
+        System.out.println(" ");
         
+        for (int col = 0; col < avgGvn.length; col++) {
+            System.out.println(TwoDArray.getColAvg(avgGvn)[col]);
+        }
 
     }
 
