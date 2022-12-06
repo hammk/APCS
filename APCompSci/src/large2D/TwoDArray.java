@@ -78,14 +78,14 @@ public class TwoDArray {
         double numTbl[] = new double[ary.length];
         double num = 0;
         
-        for(xIndex = 0; xIndex < ary.length; xIndex++) {
+        for(yIndex = 0; yIndex < ary[xIndex].length; yIndex++) {
         
-            for(yIndex = 0; yIndex < ary[xIndex].length; yIndex++) {
+            for(xIndex = 0; xIndex < ary.length; xIndex++) {
                 
                 num += ary[xIndex][yIndex];
                 
             }
-            numTbl[xIndex] = num / ary[xIndex].length;
+            numTbl[xIndex] = num / ary[yIndex].length;
             
         }
         return numTbl;
