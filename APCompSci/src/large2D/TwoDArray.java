@@ -1,7 +1,7 @@
 package large2D;
 
 /**
- * This class passes through a 2D array to determine the highest value and it's index.
+ * This class passes through a 2D array to determine either it's highest value and index or the average and sum of the array.
  * @author humzahkha0143
  */
 public class TwoDArray {
@@ -40,6 +40,27 @@ public class TwoDArray {
         }
         return "Largest Value: " + num + ", Index: (" + xC + ", " + yC + ")";
         
+    }
+    
+    public static double[] getRowAvg(int[][] ary) {
+        int xIndex = 0;
+        int yIndex = 0;
+        double numTbl[] = new double[ary.length];
+        double num = 0;
+        
+        for(yIndex = 0; xIndex < ary.length; xIndex++) {
+        
+            for(xIndex = 0; yIndex < ary[yIndex].length; yIndex++) {
+                
+                if(num < ary[xIndex][yIndex]) {
+                    num += ary[xIndex][yIndex];
+                }
+                numTbl[xIndex] = num / ary.length;
+                
+            }
+        
+        }
+        return numTbl;
     }
     
 }
