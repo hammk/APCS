@@ -7,11 +7,12 @@ package large2D;
 public class TwoDArray {
     
     /**
-     * This single method initializes variables for the indexes of X and Y
-     * across the array and what so far it thinks is the highest number, then
-     * it traverses the given 2D array. When it finds a number higher than
-     * it's own 'highest' number, that number and it's index are stored.
-     * When it finishes the array, those two values are returned.
+     * This method initializes variables for the indexes of X and Y
+     * across the array and what so far it thinks is the highest
+     * number, then it traverses the given 2D array. When it finds
+     * a number higher than it's own 'highest' number, that number
+     * and it's index are stored. When it finishes the array, those
+     * two values are returned.
      * @param ary - Two-Dimensional Array to search.
      * @return num - Highest detected number.
      * @return xC - X-axis coordinates for num.
@@ -42,23 +43,50 @@ public class TwoDArray {
         
     }
     
-    public static double[] getRowAvg(int[][] ary) {
+    /**
+     * 
+     * @param ary
+     * @return
+     */
+    public static double[] getRowAvg(double[][] ary) {
         int xIndex = 0;
         int yIndex = 0;
         double numTbl[] = new double[ary.length];
         double num = 0;
         
-        for(yIndex = 0; xIndex < ary.length; xIndex++) {
+        for(xIndex = 0; xIndex < ary.length; xIndex++) {
         
-            for(xIndex = 0; yIndex < ary[yIndex].length; yIndex++) {
+            for(yIndex = 0; yIndex < ary[xIndex].length; yIndex++) {
                 
-                if(num < ary[xIndex][yIndex]) {
-                    num += ary[xIndex][yIndex];
-                }
-                numTbl[xIndex] = num / ary.length;
+                num += ary[xIndex][yIndex];
                 
             }
+            numTbl[xIndex] = num / ary[xIndex].length;
+            
+        }
+        return numTbl;
+    }
+    
+    /**
+     * 
+     * @param ary
+     * @return
+     */
+    public static double[] getColAvg(double[][] ary) {
+        int xIndex = 0;
+        int yIndex = 0;
+        double numTbl[] = new double[ary.length];
+        double num = 0;
         
+        for(xIndex = 0; xIndex < ary.length; xIndex++) {
+        
+            for(yIndex = 0; yIndex < ary[xIndex].length; yIndex++) {
+                
+                num += ary[xIndex][yIndex];
+                
+            }
+            numTbl[xIndex] = num / ary[xIndex].length;
+            
         }
         return numTbl;
     }
