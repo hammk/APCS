@@ -44,9 +44,15 @@ public class TwoDArray {
     }
     
     /**
-     * 
-     * @param ary
-     * @return
+     * After initializing the variables, it begins a for loop that
+     * traverses the rows (xIndex). Inside the loop is another for loop that
+     * traverses the columns (yIndex) and adds up the values in that column.
+     * The average for that column is then stored to the respective
+     * index in the table of row averages before the xIndex loop
+     * increments. When the xIndex loop concludes, the resulting
+     * table of row averages are returned.
+     * @param ary - Given array of doubles. NO JAGGED ARRAYS!
+     * @return numTbl - 1D array of averages for each row in given array.
      */
     public static double[] getRowAvg(double[][] ary) {
         int xIndex = 0;
@@ -68,24 +74,31 @@ public class TwoDArray {
     }
     
     /**
-     * 
-     * @param ary
-     * @return
+     * After initializing the variables, it begins a for loop that
+     * traverses the columns (yIndex). Inside the loop is another for loop that
+     * traverses the rows (xIndex) and adds up the values in that row.
+     * The average for that row is then stored to the respective
+     * index in the table of column averages before the yIndex loop
+     * increments. When the yIndex loop concludes, the resulting
+     * table of column averages are returned.
+     * @param ary - Given array of doubles. NO JAGGED ARRAYS!
+     * @return numTbl - 1D array of averages for each column in given array.
      */
     public static double[] getColAvg(double[][] ary) {
         int xIndex = 0;
         int yIndex = 0;
-        double numTbl[] = new double[ary.length];
+        double numTbl[] = new double[ary[0].length];
         double num = 0;
         
-        for(yIndex = 0; yIndex < ary[xIndex].length; yIndex++) {
-        
+        for(yIndex = 0; yIndex < ary[0].length; yIndex++) {
+            
             for(xIndex = 0; xIndex < ary.length; xIndex++) {
                 
                 num += ary[xIndex][yIndex];
                 
             }
-            numTbl[xIndex] = num / ary[xIndex].length;
+            numTbl[yIndex] = (num / ary.length);
+            num = 0;
             
         }
         return numTbl;
