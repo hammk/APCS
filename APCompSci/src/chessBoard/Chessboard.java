@@ -32,13 +32,13 @@ public class Chessboard {
      */
     public void draw(Graphics2D g2) {
         
-        double x, y;
+        double x, y = 0;
         boolean wr = true;
-
         
-        for(y = 0; y <= (sq * sz); y += sz) {
+        while(y <= (sq * sz)) {
             
            for(x = 0; x <= (sq * sz); x += sz) {
+               
                
                if(wr == true) {
                    g2.setColor(Color.red);
@@ -51,7 +51,16 @@ public class Chessboard {
                g2.fillRect((int) x, (int) y, sz, sz); 
                
            }
-                   
+           
+           if(wr == true) {
+               wr = false;
+           }
+           else {
+               wr = true;
+           }
+           
+           y += sz;
+           
         }
 
     }

@@ -69,7 +69,7 @@ public class APStudent {
     
     /**
      * Returns an overview of a student.
-     * @return Student John Doe has an ID of 2031337 and a GPA of 3.69.
+     * @return Student John Doe has an ID of 2031337 and a GPA of 4.20.
      */
     public String toString() {
         return "Student " + getFirstName() + " " + getLastName() + " has an ID of " + getIDNum() + " and a GPA of " + getGPA() + ".";

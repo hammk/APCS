@@ -10,7 +10,7 @@ public class ChessboardComponent extends JComponent
    {
       Graphics2D g2 = (Graphics2D) g;
 
-      final int NSQUARES = 20;
+      final int NSQUARES = 7;
 
       int size = Math.min(getWidth(), getHeight()) / NSQUARES;
       Chessboard cb = new Chessboard(NSQUARES, size);
