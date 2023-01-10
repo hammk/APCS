@@ -40,32 +40,41 @@ class Peak {
 	 * the highest number isn't the last or first number,
 	 * then it is considered the peak and it's index is
 	 * returned. Otherwise, return -1.
-	 * @param array
-	 * @return
+	 * @param array - array to find peak of
+	 * @return index of array peak or -1
 	 */
 	public int getPeak(int[] array)
 	{
 	    int peak = 0;
-	    for(int j = 0; j < array.length; j++)
-        {
-            if(array[j] >= peak)
-            {
-                if(j != 0 && j != (array.length - 1))
-                    peak = array[j];
-            }
-                
-        }
-		return -1;
+	    int pIndex = -1;
+	    if(!isIncreasing(array, array.length - 1) && !isDecreasing(array, 0)) {
+	        for(int j = 0; j < array.length; j++)
+	        {
+	            if(array[j] >= peak)
+	                if(j != 0 && j != (array.length - 1))
+	                {
+	                    peak = array[j];
+	                    pIndex = j;
+	                }             
+	        }
+	    }
+	    return pIndex;
 	}
 	
 	/**
-	 * Checks if a given array has a peak by
-	 * @param array
-	 * @return
+	 * Checks if a given array is arranged in a triangle
+	 * with no extra peaks. It uses included method getPeak
+	 * to find the index of the peak, then runs included
+	 * methods isIncreasing and isDecreasing, using the
+	 * index as a starting/stopping point. If both methods
+	 * return true, this method return true.
+	 * @param array - array to check if arranged like a triangle
+	 * @return true/false
 	 */
 	public boolean hasPeak(int[] array)
 	{
-	    if(!isIncreasing(array, array.length - 1) && !isDecreasing(array, 0)) return true;
+	    if(getPeak(array) != -1)
+	        if(isIncreasing(array, getPeak(array)) && isDecreasing(array, getPeak(array)))return true;
 	    return false;
 	}
 	
